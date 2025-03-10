@@ -1,0 +1,22 @@
+{
+  "name": "pifa",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index.js",        
+    "build": "next build",         
+    "start": "next start",        
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.2",         
+    "mariadb": "^3.4.0",          
+    "next": "^15.2.1",             
+    "react": "^18.2.0",           
+    "react-dom": "^18.2.0"         
+  }
+}

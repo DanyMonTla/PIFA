@@ -1,0 +1,12 @@
+node_modules/
+.env
+.next
+*.log
+node_modules
+# .gitignore
+*.node
+echo node_modules/ > .gitignore
+echo .next/ >> .gitignore
+echo .env >> .gitignore
+echo *.log >> .gitignore
+echo *.node >> .gitignore
