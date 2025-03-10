@@ -1,9 +1,6 @@
 // app/indicadores/page.js
-"use client"; // Necesario para usar hooks y APIs del navegador
+"use client";
 
-import { useEffect } from 'react';
-
-// Datos de ejemplo (o puedes cargarlos desde una API)
 const indicadores = [
   {
     clave: "IND-001",
@@ -15,7 +12,6 @@ const indicadores = [
   }
 ];
 
-// Función para determinar el color según el porcentaje
 const getColorClass = (porcentaje) => {
   if (porcentaje >= 80) return "color-green";
   if (porcentaje >= 50) return "color-yellow";
@@ -23,41 +19,37 @@ const getColorClass = (porcentaje) => {
 };
 
 export default function TablaIndicadores() {
-  // Código del cliente (solo se ejecuta en el navegador)
-  useEffect(() => {
-    const tabla = document.getElementById("tabla-indicadores");
-    
-    indicadores.forEach(indicador => {
-      const row = document.createElement("tr");
-      row.innerHTML = `
-        <td>${indicador.clave}</td>
-        <td>${indicador.indicador}</td>
-        <td>${indicador.logroT1}</td>
-        <td>${indicador.proyT2}</td>
-        <td>${indicador.logroT2}</td>
-        <td class="porcentaje ${getColorClass(indicador.porcentaje)}">
-          ${indicador.porcentaje}%
-        </td>
-      `;
-      tabla.appendChild(row);
-    });
-  }, []);
-
   return (
     <div className="container">
-      <h1>Indicadores</h1>
+      <header className="header-unam">
+        <h2>Investigación en Ciencias y Desarrollo Tecnológico</h2>
+        <h3>Indicadores Blancos</h3>
+      </header>
+
       <table className="tabla-indicadores">
         <thead>
           <tr>
-            <th>Clave</th>
-            <th>Indicador</th>
-            <th>Logro T1</th>
-            <th>Proy T2</th>
-            <th>Logro T2</th>
-            <th>% Avance</th>
+          <th>Clave</th>
+    <th>Indicador</th>
+    <th>Logro T1</th>
+    <th>Proy T2</th>
+    <th>Logro T2</th>
+    <th>% Avance</th>
+    <th>Causa</th>
+    <th>Plan de acción</th>
           </tr>
         </thead>
-        <tbody id="tabla-indicadores"></tbody>
+        <tbody>
+          {/* Aquí tus filas, ya sea generadas con .map o manualmente */}
+          <tr>
+            <td>IND-001</td>
+            <td>Cursos extracurriculares</td>
+            <td>10</td>
+            <td>15</td>
+            <td>12</td>
+            <td className="color-green">80%</td>
+          </tr>
+        </tbody>
       </table>
     </div>
   );

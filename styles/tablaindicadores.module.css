@@ -1,70 +1,63 @@
-/* public/css/estilos.css */
-.tabla-indicadores {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 2rem 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-    border-radius: 12px;
-    overflow: hidden;
-    font-family: 'Segoe UI', system-ui, sans-serif;
-  }
-  
-  .tabla-indicadores thead {
-    background-color: #2c3e50;
-    color: white;
-  }
-  
-  .tabla-indicadores th {
-    padding: 1.2rem;
-    text-align: left;
-    font-weight: 600;
-    text-transform: uppercase;
-    font-size: 0.9em;
-    letter-spacing: 0.5px;
-  }
-  
-  .tabla-indicadores td {
-    padding: 1rem;
-    background-color: #ffffff;
-    border-bottom: 1px solid #f0f0f0;
-    transition: background-color 0.2s ease;
-  }
-  
-  .tabla-indicadores tr:hover td {
-    background-color: #f8f9fa;
-  }
-  
-  .tabla-indicadores tr:last-child td {
-    border-bottom: none;
-  }
-  
-  /* Colores para porcentajes */
-  .color-green {
-    color: #27ae60;
-    font-weight: 600;
-  }
-  
-  .color-yellow {
-    color: #f1c40f;
-    font-weight: 600;
-  }
-  
-  .color-red {
-    color: #e74c3c;
-    font-weight: 600;
-  }
-  
-  /* Estilo para celdas destacadas */
-  .destacado {
-    background-color: #f8f9fa !important;
-    font-weight: 500;
-  }
-  
-  /* Responsive para móviles */
-  @media (max-width: 768px) {
-    .tabla-indicadores {
-      display: block;
-      overflow-x: auto;
-      -webkit-overflow-scrolling: touch;
-    }
-  }
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.container {
+  max-width: 90%;
+  margin: 20px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  background: #00274d;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+th {
+  background-color: #dddddd;
+}
+
+.porcentaje {
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.verde {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.amarillo {
+  background-color: #FFC107;
+  color: black;
+}
+
+.rojo {
+  background-color: #F44336;
+  color: white;
+}
+
+.azul {
+  background-color: #2196F3;
+  color: white;
+}

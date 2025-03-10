@@ -1,64 +1,81 @@
+/* Contenedor principal */
+.container {
+  max-width: 1200px; /* Ajusta el ancho que desees */
+  margin: 0 auto;    /* Centra el contenedor */
+  padding: 20px;     /* Espaciado interno */
+  background-color: #f9f9f9; /* Color de fondo suave */
+  border-radius: 8px;        /* Bordes redondeados */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    text-align: center;
-  }
-  
-  .container {
-    max-width: 90%;
-    margin: 20px auto;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  h2 {
-    background: #00274d;
-    color: white;
-    padding: 15px;
-    border-radius: 5px;
-  }
-  
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 10px;
-  }
-  
-  th, td {
-    padding: 12px;
-    text-align: center;
-    border: 1px solid #ccc;
-  }
-  
-  th {
-    background-color: #dddddd;
-  }
-  
-  .porcentaje {
-    font-weight: bold;
-    border-radius: 5px;
-    padding: 5px;
-  }
-  
-  .verde {
-    background-color: #4CAF50;
-    color: white;
-  }
-  
-  .amarillo {
-    background-color: #FFC107;
-    color: black;
-  }
-  
-  .rojo {
-    background-color: #F44336;
-    color: white;
-  }
-  
-  .azul {
-    background-color: #2196F3;
-    color: white;
-  }
-  
+  margin: 0;
+  padding-top: 100px; /* Ajusta al alto de tu header */
+}
+
+/* Encabezado estilo UNAM (ejemplo) */
+.header-unam {
+  text-align: center;
+  padding: 20px;
+  background-color: #003B5C; /* Un color institucional UNAM */
+  color: #fff;              /* Texto blanco */
+  border-radius: 8px 8px 0 0; /* Redondeo solo en la parte superior */
+  margin-bottom: 20px;        /* Separación con la tabla */
+}
+
+.header-unam h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.header-unam h3 {
+  margin: 5px 0 0;
+  font-size: 1.2rem;
+  font-weight: normal;
+  z-index: 999; 
+}
+
+/* Estilos para la tabla */
+.tabla-indicadores {
+  width: 100%;
+  border-collapse: collapse; /* Quita espacios entre celdas */
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden; /* Para que respete el radio en bordes */
+}
+
+/* Encabezados de tabla */
+.tabla-indicadores thead {
+  background-color: #ececec;
+}
+
+.tabla-indicadores th {
+  padding: 12px;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 2px solid #ddd;
+}
+
+/* Celdas del cuerpo de la tabla */
+.tabla-indicadores td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Clases de colores para el % */
+.color-green {
+  background-color: #c0ffc0; /* Verde claro */
+  font-weight: bold;
+}
+
+.color-yellow {
+  background-color: #fffac0; /* Amarillo claro */
+  font-weight: bold;
+}
+
+.color-red {
+  background-color: #ffc0c0; /* Rojo claro */
+  font-weight: bold;
+}
